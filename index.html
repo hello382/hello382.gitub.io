@@ -1,84 +1,30 @@
-﻿<!DOCTYPE html>
-<html lang="zh-CN" id="bgimg">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
-<title>荣</title>
-<meta name="description" content="荣">
-<meta name="keywords" content="荣">
-<link rel="icon" href="" mce_href="/dir/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="https://www.bootcss.com/p/buttons/css/buttons.css">
-<link rel="stylesheet" type="text/css" href="https://www.bootcss.com/p/buttons/css/showcase.css">
-<link type="text/css" rel="stylesheet" href="style.css" />
-<meta name="referrer" content="no-referrer" />
-<div style="text-align:center;clear:both">
-</div>
-<div class="tooltips">
-<span>
+    <meta charset="UTF-8">
+    <title>HTML5 判别当前浏览设备 如何有网页判别设备</title>
 </head>
 <body>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1359337125&auto=1&height=66"></iframe>
-
-<!--结束-->
-</div>
-<div id="top">
-<main id="top_main">
-<div id="top_logo"><img src="src/tx2.png" onmouseover="mouseOver()" onmouseout="mouseOut()" id="mainimg"></div>
-<div id="top_title"><img id="top_title01" alt="" src="src/toptitle01.png">
-<br class="top_hr_style01">
-</div><br><br>
-<div class="showcase-examples l-over l-center">
-  <a href="https://space.bilibili.com/491808465" title="按钮" class="button button-rounded button-plain button-small-caps button-border" target="_blank">B站空间</a>
-  <a href="https://user.qzone.qq.com/3067004058/main?_t_=0.4750402745888018" title="按钮" class="button button-rounded button-plain button-small-caps button-border"target="_blank" >QQ空间</a>
-  <a href="https://music.163.com/#/user/home?id=3966275865" title="按钮" class="button button-rounded button-plain button-small-caps button-border" target="_blank" >网易云空间</a>
-</div>
-</main>
-</div>
-<footer id="top_footer">
-<span id="top_copyright">
-<hr class="top_hr_style02">
-音乐架</a>
-<iframe src="//player.bilibili.com/player.html?aid=85380141&bvid=BV1j7411r7Kg&cid=145949441&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-<iframe src="//player.bilibili.com/player.html?aid=202042225&bvid=BV1bh411R7ob&cid=233911363&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-<iframe src="//player.bilibili.com/player.html?aid=66860721&bvid=BV1e4411k7XS&cid=115948418&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-<hr class="top_hr_style02">
-<a href="https://space.bilibili.com/491808465">荣</a> copyright © 2020 All Rights Reserved. <a href=""></a>
-</span>
-</footer>
+<script type="text/javascript">
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        document.writeln("自动跳转中，您的浏览设备为：");
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            document.writeln("phone");
+        } else {
+            document.writeln("电脑");
+            window.location.href = 'https://hello382.github.io';
+        }
+    }
+    browserRedirect();
+</script>
 </body>
-<script>
-	function mouseOver(){
-		document.getElementById("mainimg").src="src/tx.png";//鼠标悬浮时的旋转图标
-	}
-	function mouseOut()
-	{
-		document.getElementById('mainimg').src ="src/tx2.png"//默认的旋转图标
-	}
-</script>
-<script type="text/javascript">
-	function change(){
-		var bodyBgs = [];
-bodyBgs[1] = "https://img2.baidu.com/it/u=2500338988,2212356101&fm=26&fmt=auto&gp=0.jpg";
-bodyBgs[2] = "https://img0.baidu.com/it/u=2981404368,1496981839&fm=26&fmt=auto&gp=0.jpg";
-bodyBgs[3] = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201408%2F24%2F145941k3r6rq36yqykp22r.jpg&refer=http%3A%2F%2Fattach.bbs.miui.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1631461436&t=912b07ec3c750661fb36d9891a838863";
-bodyBgs[4] = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpad.mydrivers.com%2Fimg%2F20200720%2Fc146fe34d18042a5aa99ae6ab140c49e.jpg&refer=http%3A%2F%2Fpad.mydrivers.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1631461692&t=419ca64768d49799c97dc4ce6ca4d437";
-bodyBgs[5] = "https://h2.ioliu.cn/bing/Southpaw_ZH-CN0080320297_1920x1080.jpg";
-bodyBgs[6] = "https://h2.ioliu.cn/bing/PrathameshJaju_ZH-CN2207606082_1920x1080.jpg";
-bodyBgs[7] = "https://h2.ioliu.cn/bing/MontChoisy_ZH-CN5381112230_800x480.jpg";
-bodyBgs[8] = "https://h2.ioliu.cn/bing/LighthouseWave_ZH-CN5731015881_800x480.jpg";
-bodyBgs[9] = "https://h2.ioliu.cn/bing/AppalachianTrail_ZH-CN5076145300_800x480.jpg";
-bodyBgs[10] = "https://h2.ioliu.cn/bing/SerraMalagueta_ZH-CN4592152973_800x480.jpg";
-bodyBgs[11] = "https://h2.ioliu.cn/bing/WakatobiNP_ZH-CN0672859436_800x480.jpg";
-bodyBgs[12] = "https://h2.ioliu.cn/bing/RocksSeychelles_ZH-CN0105602892_800x480.jpg";
-		var randomBgIndex = Math.round( Math.random() * 12 );
-		var img1= document.getElementById('bgimg');
-		img1.style.backgroundImage='url(' + bodyBgs[randomBgIndex] + ')';
-	        window.setTimeout(function(){change()},10000);
-	}
-	change();
-</script>
-<script type="text/javascript" src="src/snow.min.js"></script>        
-<script type="text/javascript">
-createSnow('src/', 60);
-</script>
 </html>
